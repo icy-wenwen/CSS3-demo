@@ -1,0 +1,95 @@
+<script src="http://cdn.bootcss.com/jquery/1.12.1/jquery.min.js"></script>
+<input type="button" value="3屏显示" id="btn31">
+<input type="button" value="3屏隐藏" id="btn32">
+<br>
+<input type="button" value="2屏显示" id="btn21">
+<input type="button" value="2屏隐藏" id="btn22">
+<br>
+http://wow.blizzard.cn/wow/wod-achievement/
+
+<script type="text/javascript">
+$(function(){
+    $("#btn31").click(function(){
+        $('.g-section-3').addClass('active');
+    });
+    $("#btn32").click(function(){
+        $('.g-section-3').removeClass('active');
+    });
+    $("#btn21").click(function(){
+        $('.g-section-2').addClass('active');
+    });
+    $("#btn22").click(function(){
+        $('.g-section-2').removeClass('active');
+    });
+
+});
+</script>
+<style type="text/css">
+.g-section-3 h3{transform:translate(0px,-40px);opacity:0;filter:alpha(opacity=100)}
+.g-section-3 .faq-1{transform:translate(0px,80px);opacity:0;filter:alpha(opacity=100)}
+.g-section-3 .faq-2{transform:translate(0px,80px);opacity:0;filter:alpha(opacity=100)}
+.g-section-3 .faq-3{transform:translate(0px,80px);opacity:0;filter:alpha(opacity=100)}
+
+.g-section-3.active h3{transform:translate(0px,0);opacity:1;transition:all .6s}
+.g-section-3.active .faq-1{transform:translate(0px,0);opacity:1;transition:all .6s}
+.g-section-3.active .faq-2{transform:translate(0px,0);opacity:1;transition:all .8s}
+.g-section-3.active .faq-3{transform:translate(0px,0);opacity:1;transition:all 1s}
+</style>
+<div class="g-section g-section-3" style="width: 1311px;">
+    <div class="c-content">
+        <div class="m-faq">
+            <h3>常见问题</h3>
+            <dl class="faq-1">
+                <dt>Q：报名后还可以更换游戏角色吗？</dt>
+                <dd><strong>A：</strong>不能。4 项指定成就必须由报名时选取的游戏角色完成；</dd>
+            </dl>
+            <dl class="faq-2">
+                <dt>Q：活动前完成的指定成就算吗？</dt>
+                <dd><strong>A：</strong>算。凡是7月31日23：59前完成 4 项指定成就的报名玩家都可以计入排名；</dd>
+            </dl>
+            <dl class="faq-3">
+                <dt>Q：报名玩家点数相同怎么办？</dt>
+                <dd><strong style="height: 300px; display:bolck; float:left">A：</strong>优先按照成就点数进行排名；若成就点数相同者超出奖励名额，则根据4项指定成就的 完成时间进行排名。
+                    <br> （示例：玩家A和B的成就点数相同且在报名玩家中排在第1位，玩家A在2016年1月完成了4项指定成就；玩家B在2016年4月完成，则玩家A获得第1名，玩家B计入后续奖励，以此类推。）
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+
+<style type="text/css">
+.m-join{float:left;position:relative}
+.m-achievement{float:left}
+.m-achievement h3{display:block;width:307px;height:55px;text-indent:-999em;margin-bottom:54px;background:url(http://wow.nos.netease.com/1/images/wow/11-year/sprite.png) no-repeat -385px -438px}
+.m-achievement li{background:url(http://wow.nos.netease.com/1/images/wow/11-year/sprite.png) no-repeat -392px 0;width:340px;height:82px;display:block;margin-bottom:25px;margin-right:100px}
+
+.g-section-2 .m-achievement{transform:translate(-80px,0);opacity:0;filter:alpha(opacity=100)}
+.g-section-2 .m-join{transform:translate(80px,0);opacity:0;filter:alpha(opacity=100)}
+.g-section-2.active .m-achievement{transform:translate(0px,0);opacity:1;transition:all .6s}
+.g-section-2.active .m-join{transform:translate(0px,0);opacity:1;transition:all .6s}
+</style>
+<div class="g-section g-section-2" style="width: 1311px;">
+    <div class="c-content">
+        <div class="m-achievement">
+            <h3>4项指定成就</h3>
+            <ul>
+                <li class="achievement-1">1111</li>
+                <li class="achievement-2">2222</li>
+                <li class="achievement-3">3333</li>
+                <li class="achievement-4">4444</li>
+            </ul>
+        </div>
+        <div class="m-join">
+            <h3>加入方式</h3>
+            <ul class="join-info">
+                <li>登录并选择您的游戏角色</li>
+                <li>点击“立即加入”按钮以确认参与本次成就排名活动</li>
+                <li>活动截止前，确保您的游戏角色完成了<span>4项《德拉诺之王》指定成就*</span></li>
+                <li>活动结束后，我们将根据您所获取的<span>总成就点数进行排名</span>并发放奖励</li>
+                <li><strong>报名时间：</strong>6月24日-7月31日</li>
+                <li><strong>排名统计截止时间：</strong>7月31日23：59</li>
+            </ul>
+        </div>
+    </div>
+</div>
